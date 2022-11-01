@@ -107,7 +107,7 @@ header p {
 
 #inicio_section{
     height: 95vh;
-    background-image: /*linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.1)),*/ url("/HEPTA_SITE/components/images/fundo.png");
+    background-image: /*linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.1)),*/ url("/techture-site/components/images/fundo.png");
     background-size: cover;
     padding-top: 200px;
 }
