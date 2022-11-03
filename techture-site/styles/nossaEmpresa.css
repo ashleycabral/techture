@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Share+Tech & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Poiret+One&family=Six+Caps&display=swap');
+/*========================geral==========================*/
+
+
+:root {
+    --gray-color: #0D0D0D;
+    --dark-color: #000000;
+    --light-color:  #FFFFFF;
+    --back-color: #F7F8F9;
+    --blue-color: #FF914b;
+    --orange-light-color:  #FFB251;
+    --dark-blue: #1e2b32;
+  }
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+     background-color: var(--back-color);
+     
+}
+
+/*=======================cabeçalho=======================*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    
+}
+
+header.ativo{
+    background-color: rgba(0, 0, 0, 0.726); ;
+    border-bottom: none;
+    transition: .5s;
+}
+
+header .logo {
+  margin-top: 2px;
+   width: 180px;
+}
+
+#menu-web {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    margin-left: 20rem;
+    
+}
+
+#menu-web a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--light-color);
+    gap: 30px;
+}
+
+#menu-web a:hover{
+    color: var(--blue-color);
+    transition: .3s;
+}
+
+#menu-web .btn-contact{
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border-color: var(--blue-color);
+}
+#botao-mobile{
+    display: none;
+}
+
+
+/*=========================seção inicial========================*/
+
+#inicio_section{
+    height: 60vh;
+    background-color: var(--gray-color);
+    position: relative;
+    padding-top: 160px;
+}
+
+
+#inicio_divCentral{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;  
+    
+ 
+}
+
+ .title-inicio{
+    font-size: 45px;
+    color: var(--blue-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    
+}
+ .txt-inicio{
+  color: var(--light-color);
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 0 14.9rem;
+  text-align: center;
+}
+
+/*=========================seção sobre========================*/
+#sobre_section{
+    background-image: url(/techture-site/components/images/layered-waves-haikei\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 6rem;
+}
+
+#container-sobre{
+    margin: 40px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+ .img-escritorio{
+    width: 35%;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.text-sobre h2{
+    font-size: 35px;
+    padding: 10px 20rem 10px 0;
+}
+
+
+.text-sobre p{
+   font-size: 18px;
+   padding: 15px 10rem 15px 0rem;
+   text-align: left;
+   line-height: 36px;
+}
+
+/*=========================seção cards========================*/
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: var(--blue-color);
+    display: flex;
+    margin:20px auto 0 auto;
+    
+}
+
+#solucao_section {
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+
+}
+#text-solucao {
+  font-weight: 600;
+  color: var(--light-color);
+  font-size: 26px;
+  padding: 0 15rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#solucao_container h3{
+  font-size: 25px;
+  padding: 1rem  1rem;
+  color: var(--light-color);
+}
+#solucao_container h3:hover{
+    color: var(--gray-color);
+}
+
+#solucao_container p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    color: var(--back-color);
+    font-weight: 400;
+}
+
+
+
+
+
+/* div dos container*/
+#solucao_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10px;
+    padding: 0 50rem;
+    margin-bottom: 45px;
+}
+
+
+
+.solucao-card {
+    background-color: var(--blue-color);
+    width: 400px;
+    height: 300px;
+    padding: 25px 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border-top: 4px solid  rgb(243, 188, 136);
+    border-left: 4px solid rgb(243, 188, 136);
+    box-shadow: 20px 20px 30px rgba(172, 94, 22, 0.418);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*=========================seção cards========================*/
+
+.entrar-ctt{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.6)), url(/techture-site/components/images/pexels-energepiccom-110469.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-entrar-ctt{
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.text-entrar-ctt h2{
+    color: var(--light-color);
+    font-size: 30px;
+}
+
+
+.text-entrar-ctt p{
+    color: var(--light-color);
+    font-size: 20px;
+}
+
+
+
+.button{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--blue-color);
+    color: var(--light-color);
+    padding: 12px 18px;
+    border: none;
+    transition: .2s;
+    border-radius: 20px;
+    
+  }
+
+
+  
+footer{
+    background-color: var(--back-color);
+    color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 150px;
+}
+
+
+footer a{
+    color:var(--gray-color);
+}
+
+footer h3{
+    font-size: 25px;
+}

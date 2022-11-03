@@ -8,20 +8,21 @@
         <link rel="stylesheet" href="/techture-site/styles/fonts.css">
         <link rel="stylesheet" href="/techture-site/styles/style.css">
         <link rel="stylesheet" href="/techture-site/styles/responsive.css">
-        <link rel="icon" href="/techture-site/components/images/icon.png">
+        <link rel="icon" href="/techture-site/components/images/icone.png">
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://kit.fontawesome.com/c04f498b01.js"  crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <p>TechTure</p>
+            <img class="logo" src="/techture-site/components/images/logo.png" alt="">
             <nav id="navegar">
-                <button id="botao-mobile">Menu
+                <button id="botao-mobile">
                     <span id="hamburguer"></span>
                 </button>
                 <ul id="menu-web">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#sobremim_section">Nossa empresa</a></li>
+                    <li><a href="nossaEmpresa.html">Nossa empresa</a></li>
                     <li><a href="#solucao_section">Soluções</a></li>
                     <li><a href="#vantagem_section">Vantagens</a></li>
                     <li><a class="btn-contact" href="#contato_section">Contato</a></li>
@@ -34,14 +35,15 @@
             <section id="inicio_section">
                 <div id="inicio_divCentral">
                   
-                        <h1><strong id="nome_escrito">TechTure</strong></h1>
-                        <p>Gerenciar seus projetos nunca foi tão fácil!</p>
+                        <h1 class="title-inicio type-animation">TechTure</h1>
+                        <p class="text-inicio">Gerencie os seus projetos</p>
+                        <p class="text2-inicio">Fazer o controle dos seus projetos nunca foi tão fácil! Somos a solução para o seu escritório de arquitetura.</p>
                       <div  class="button-inicio">
                         <div>
                           <a href="#contato_section" class="button" >Entre em contato</a> 
                        </div>
                        <div  
-                           <a href="#sobrenos_section"  class="button">Nossa empresa</a>
+                           <a  class="btn2-inicio" href="#sobrenos_section">Nossa empresa</a>
                        </div>
                 </div>
             </section>
@@ -51,29 +53,31 @@
               <div id="text-solucao">
                 <h2>Nós temos as melhores soluções em sistemas
                   de controle de projetos para sua empresa</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur vel sit voluptates incidunt velit! Maxime porro, sapiente beatae, aut aperiam.
+                <p>Conheça nosso portifólio de soluções sobre o software da TechTure. Com ele você terá um maior controle e agilidade nos processos da sua empresa.
                 </p>
               </div>
                 <div id="solucao_container">
     
-                  <div class="solucao_c1">
+                  <div class="solucao-card">
                        <img src="/" alt="imagem">
-                       <h3>Proj 01</h3>
+                       <h3>Software Integrado</h3>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                   </div>
   
-                  <div class="solucao_c1">
+                  <div class="solucao-card">
                       <img src="/techture-site/components/images/iteracao (2).png" alt="imagem">
-                      <h3>Proj 01</h3>
+                      <h3>Site Portifólio</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                   </div>
   
-                  <div class="solucao_c1">
+                  <div class="solucao-card">
                        <img src="/" alt="imagem">
-                       <h3>Proj 01</h3>
+                       <h3>Gerenciador de projetos</h3>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                   </div>
                 </div>
+
+                <img class="img-fundo-solucao" src="/techture-site/components/images/imagem-fundo.png" alt="imagem">
        
             </section>
     
@@ -86,11 +90,11 @@
 
                 <div class="vantagem1">
                     <div>
-                      <img src="" alt="image">
+                      <img class="icon-vantagem" src="/techture-site/components/images/designer-de-web (1).png" alt="icone">
                     </div>
                     <div class="text-vantagem1">
-                      <h3>Vantagem 1</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos inventore nam esse rerum odio officiis deserunt ad alias quibusdam in.</p>
+                      <h3>Desenvolvimento Próprio</h3>
+                      <p>Autonomia na gestão de todos os processos do sistema, apresentando agilidade nas manutenções legais, específicas e nas soluções de problemas, proporcionando tranquilidade à sua empresa.</p>
                    </div>
                </div>
 
@@ -210,6 +214,11 @@
             <p>Copyright &copy; 2022 Techture</p>
         </footer>
         <script src="/techture-site/js/script.js"></script>
+        <script src="/techture-site/js/vanilla tilt.js"></script>
+        <script>
+          VanillaTilt.init(document.querySelectorAll(".solucao-card"));
+         
+        </script>
     </body>
     
     </html>

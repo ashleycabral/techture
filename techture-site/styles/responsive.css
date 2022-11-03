@@ -1,3 +1,15 @@
+
+:root {
+    --gray-color: #0D0D0D;
+    --dark-color: #000000;
+    --light-color:  #FFFFFF;
+    --back-color: #F7F8F9;
+    --blue-color: #FF914b;
+    --orange-light-color:  #FFB251;
+    --dark-blue: #1e2b32;
+  }
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -10,36 +22,35 @@
         padding: 20px;
     }
 
-    .titulo {
-        font-size: 30px;
-        margin: 40px;
-        color: #73A4BF;
-        border-bottom: 2px solid #73A4BF;
-    }
 
 
     /*=======================cabeçalho=======================*/
 
-   
+    header{
+        gap: 70px;
+    }
+
+    header .logo{
+        width: 150px;
+        
+    }
 
     #botao-mobile {
         display: flex;
         border: none;
-        color: #FFECD1;
-        font-size: 20px;
-        background-color: #001524;
+        background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
-        gap: 15px;
+        width: 10px;
     }
 
     #hamburguer{
         display: block;
         width: 20px;
-        border-top: 2px solid #FFECD1;
+        border-top: 2px solid var(--light-color);
     }
 
     #hamburguer::after, #hamburguer::before{
-        background: #FFECD1;
+        background: var(--light-color);
         display: block;
         width: 20px;
         height: 2px;
@@ -68,7 +79,7 @@
         width: 100%;
         top: 60px;
         right: 0px;
-        background-color: #001524;
+        background-color: var(--gray-color);
         z-index: 1000;
         height: 0px;
         transition: .6s;
@@ -85,16 +96,21 @@
 
    
     #menu-web li:hover{
-        background-color: #001524;
+        background-color: var(--dark-color);
         filter: brightness(1.5);
         
     }
 
     #menu-web li a{
-        display: inline-block;
-        padding: 20px;
-        border-bottom: 2px solid #FFECD1;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
         width: 100%;
+    }
+
+    #menu-web .btn-contact{
+        border: none;
+        padding: 30px;
     }
 
     /*=========================seção inicial========================*/
@@ -106,17 +122,34 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        gap: 50px;
-        margin-top: 100px;
-        margin-bottom: 50px;
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 
-    #inicio_section div h1 {
+    #inicio_section  .title-inicio {
+        font-size: 14px;
+        
+    }
+
+    #inicio_section  .text-inicio{
         font-size: 30px;
-        margin-bottom: 50px;
+    }
+    #inicio_section  .text2-inicio{
+        font-size: 15px;
+        margin: 0 -14.5rem;
     }
 
+    .button-inicio{
+        gap: 10px;
+    }
+    .button{
+        font-size: 12px;
+    }
 
+    .btn2-inicio{
+        font-size: 12px;
+    }
     /*=========================seção sobre mim======================*/
 
     #sobremim_section p {
@@ -161,7 +194,7 @@
 
 }
 
-@media only screen and (max-width: 800px) and (min-width: 600px) {
+@media only screen and (max-width: 884px) and (min-width: 600px) {
 
     #inicio_divCentral {
         display: flex;

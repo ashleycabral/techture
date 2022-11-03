@@ -28,7 +28,7 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)  //para mobile
 itemLista.addEventListener('click', toggleMenu)
-
+ 
 
 //função para animar itens ao rolar a tela
 
@@ -46,4 +46,13 @@ animeScroll()
 
 window.addEventListener("scroll", function(){
     animeScroll()
+})
+
+//animaçao de texto
+
+window.sr = ScrollReveal({reset: true})
+
+sr.reveal('.text-inicio', {
+    rotate:{x:0, y:80, z:0},
+    duration: 2000
 })
