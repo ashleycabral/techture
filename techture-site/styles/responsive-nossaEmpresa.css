@@ -1,0 +1,217 @@
+
+    /*=======================NOSSA EMPRESA=======================*/
+
+    @media (max-width: 884px) {
+
+        
+    header .logo {
+        margin-right: 80px;
+    }
+
+        
+    #menu-web {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        
+        
+    }
+    #inicio_section{
+        height: 40vh;
+        padding-top: 200px;
+        
+    }
+        
+    .txt-inicio{
+        padding: 0 1rem;
+    }
+
+
+    .text-sobre h2{
+        font-size: 35px;
+        padding: 10px 2rem 10px 0;
+        text-align: center;
+    }
+
+
+        .text-sobre p{
+        font-size: 18px;
+        padding: 15px 1rem 15px 0rem;
+        text-align: center;
+        line-height: 36px;
+        }
+
+        
+    .img-escritorio{
+        display: none;
+    }
+
+    #text-solucao {
+        font-size: 26px;
+        padding: 0 5rem;
+    }
+
+    .solucao-card {
+        width: 320px;
+        height: 300px;
+        padding: 25px 10px;
+        margin: 25px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+     header .logo{
+        width: 150px;
+        margin-left: -40px;
+     }
+
+
+    #botao-mobile {
+        display: flex;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        width: 10px;
+    }
+
+
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid var(--light-color);
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        background: var(--light-color);
+        display: block;
+        width: 20px;
+        height: 2px;
+        content: '';
+        margin-top: 7px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #navegar.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #navegar.active #hamburguer::after{
+        transform: rotate(135deg);
+        top: -9px;
+    }
+
+    #navegar.active #hamburguer::before{
+        transform: rotate(-135deg);
+    }
+
+    #menu-web {
+        display: block;
+        position: absolute;
+        width: 80%;
+        top: 50px;
+        right: 0px;
+        background-color: var(--gray-color);
+        z-index: 1000;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #navegar.active #menu-web {
+        
+        height: calc(100vh - 60px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+   
+    #menu-web li:hover{
+        background-color: var(--dark-color);
+        filter: brightness(1.5);
+        
+    }
+
+    #menu-web li a{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    #menu-web .btn-contact{
+        border: none;
+        padding: 30px;
+    }
+
+   /*section inicio */
+        
+    #inicio_section{
+        height: 60vh;
+        padding-top: 160px;
+    }
+
+
+    .title-inicio{
+        font-size: 35px;
+        
+    }
+    .txt-inicio{
+        font-size: 18px;
+        padding: 0rem;
+    }
+
+  /*section sobre*/
+    #container-sobre{
+        margin: 1px;
+        padding: 20px;
+        text-align: center;
+        
+        
+    }
+    .img-escritorio{
+       display: none;
+    }
+        
+    .text-sobre h2{
+        font-size: 25px;
+        padding: 0 1rem;
+    }
+    .text-sobre p{
+        font-size: 18px;
+        padding: 20px 25px;
+        text-align: justify;
+    }
+
+    
+  /*section cards*/
+        
+    #text-solucao {
+        font-size: 20px;
+        padding: 0 2rem;
+    }
+
+        
+    #solucao_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        padding: 0 50rem;
+        margin-bottom: 45px;
+    }
+
+        
+    .text-entrar-ctt h2{
+        font-size: 25px;
+    }
+
+
+    .text-entrar-ctt p{
+        font-size: 17px;
+        padding-top: 20px;
+    }
+}

@@ -11,7 +11,7 @@
 
 
 /*(iphones, 600px) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
 
     /*=======================cabeçalho=======================*/
@@ -298,12 +298,15 @@
         padding: 10px 20px;
         font-size: 20px;
     }
+
+     /*=======================NOSSA EMPRESA=======================*/
     
+}
     /* End Responsive */
 
 
 /*(android, 600px) */
-@media only screen and (max-width: 360px) {
+@media (max-width: 360px) {
       
     #inicio_section  .title-inicio {
         font-size: 14px;
@@ -331,44 +334,88 @@
 
     .btn2-inicio{
         font-size: 10px
+    }
+
+
+
 }
 
-@media only screen and (max-width: 884px) and (min-width: 600px) {
 
-        
-    header {
+@media (max-width: 884px) {
+
       
+    header .logo{ 
+       margin-left: -2rem;
+    }
+
+    #menu-web {
+     gap: 26px;
+    }
+
+    
+    #inicio_divCentral{
+        margin-top: 5rem;
+    }
+    .text-inicio{
+     text-align: center;
+     font-size: 60px;
+    }
+
+    .text2-inicio{
+    font-size: 23px;
+    padding: 0 10px;
+    text-align: center;
+    }
+
+    #text-solucao h2{
+        padding: 0 100px;
+    }
+
+    
+    #text-solucao p{
+        padding: 20px 140px;
+    }
+
+   
+    #solucao_container {
+        flex-direction: ;
+        align-items: center;
+        margin-bottom: 35px;
         padding: 0 10px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0);
-        z-index: 1;
+    }
+        
+    .solucao-card {
+        width: 400px;
+        height: 392px;
+        margin: 10px;
         
     }
-     
-    #botao-mobile {
-        display: flex;
-        border: none;
-        background-color: rgba(0, 0, 0, 0);
-        cursor: pointer;
-        width: 10px;
+        
+    .solucao-card  h3{
+        font-size: 20px;
     }
-   
-    #inicio_divCentral {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    .solucao-card  p{
+        font-size: 18px;
+    }
+
+    #text-vantagem p{
+        font-size: 22px;
+        padding: 1rem 8rem;
         text-align: center;
-        gap: 50px;
-        margin-top: 100px;
-        margin-bottom: 50px;
     }
 
-    #inicio_section div h1 {
-        font-size: 45px;
-        margin-bottom: 50px;
+    
+    .vantagem1{
+        padding: 1rem 3rem;
+        margin-bottom: 6rem;
+    }
+    .vantagem2{
+        padding: 1rem 3rem;
+        margin-bottom: 6rem;
+    }
+    .vantagem3{
+        padding: 1rem 3rem;
+        margin-bottom: 6rem;
     }
 
-    #projetos_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+}
