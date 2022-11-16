@@ -27,12 +27,9 @@
 }
 
 body {
-     margin: 0;
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
      background-color: var(--light-color);
 }
-
-
 
 
 .button{
@@ -84,13 +81,13 @@ header {
     padding: 0 50px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
-    z-index: 1;
-    
+    z-index: 1;  
 }
 
 header.ativo{
     background-color: var(--gray-color);
     border-bottom: none;
+    top: 0;
     transition: .5s;
 }
 
@@ -103,9 +100,7 @@ header .logo {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    gap: 40px;
-    
-    
+    gap: 40px; 
 }
 
 #menu-web a {
@@ -113,7 +108,7 @@ header .logo {
     font-weight: 600;
     text-transform: uppercase;
     color: var(--light-color);
-    
+ 
 }
 
 #menu-web a:hover{
@@ -150,9 +145,8 @@ header .logo {
     margin: 0 auto;
     align-items: center;
     flex-direction: column;
-    gap: 10px;  
+    gap: 15px;  
     
- 
 }
 
  .text-inicio{
@@ -164,6 +158,7 @@ header .logo {
     font-family: 'Kanit', sans-serif;
     visibility: hidden;
 }
+
  .text2-inicio{
   color: var(--light-color);
   margin-bottom: 1rem;
@@ -226,16 +221,17 @@ header .logo {
 
 }
 
-.solucao-card  h3{
+.card-solucao   h3{
   font-size: 25px;
   padding: 1rem;
   color: var(--dark-color);
 }
 
-.solucao-card  h3:hover{
+.card-solucao   h3:hover{
   color: var(--blue-color);
 }
-.solucao-card  p {
+
+.card-solucao  p {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     width: 83%;
@@ -249,29 +245,24 @@ header .logo {
 
 
 #text-solucao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px;
-    width: 100%;
-    margin-bottom: 30px;
-
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem 13rem;
+   text-align: center;
 }
 
 #text-solucao h2{
   font-weight: 700;
   font-size: 35px;
-  padding: 20px 220px;
   
 }
 
 #text-solucao p {
   color: #5D5F64;
-  padding: 0 18rem;
   font-weight: 400;
   font-size: 20px;
+  padding-top: 20px;
 }
 
 /* div dos container*/
@@ -284,7 +275,7 @@ header .logo {
 
 
 
-.solucao-card {
+.card-solucao {
     background-color: var(--light-color);
     width: 360px;
     height: 360px;
@@ -298,6 +289,9 @@ header .logo {
     flex-direction: column;
     align-items: center;
     
+}
+.card-solucao img{
+  width: 80px;
 }
 
 .img-fundo-solucao{
@@ -317,24 +311,24 @@ header .logo {
   width: 190px;
 }
 
-#text-vantagem{
+#txt-vantagem{
 display: flex;
 flex-direction: column;
 align-items: center;
 padding: 20px 0;
 }
 
-#text-vantagem h2{
+#txt-vantagem h2{
   font-size: 35px;
   font-weight: 700;
   color: var(--dark-color);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#text-vantagem p{
-  font-size: 20px;
+#txt-vantagem p{
+  font-size: 23px;
   color: #5D5F64;
-  padding: 0 3rem;
+  padding: 20px 0px;
   font-weight: 400;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -342,7 +336,7 @@ padding: 20px 0;
 .vantagem1{
   display: flex;
   align-items: flex-end;
-  padding:30px 12rem;
+  padding:30px 100px;
   margin-bottom: 10rem;
 }
 
@@ -350,29 +344,31 @@ padding: 20px 0;
   display: flex;
   align-items: flex-start;
   text-align: right;
-  padding: 20px 10rem;
+  padding: 20px 100px;
   margin-bottom: 10rem;
 }
 
 .vantagem3{
   display: flex;
   align-items: flex-end;
-  padding: 20px 10rem;
+  padding: 20px 100px;
   margin-bottom: 10rem;
 }
 
-#vantagem_section h3{
-  padding: 0 2rem;
+.text-vantagem1 h3{
+  padding: 0 40px;
   font-size: 30px;
   color: var(--dark-color);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#vantagem_section  p{
+.text-vantagem1  p{
   font-size: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #5D5F64;
-  padding: 1rem 2rem;
+  padding: 1rem 40px;
 }
+
+
 /*===================== seção contato ===================*/
 .contact {
     position: relative;

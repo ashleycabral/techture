@@ -57,20 +57,20 @@
               </div>
                 <div id="solucao_container">
     
-                  <div class="solucao-card">
-                       <img src="/" alt="imagem">
+                  <div class="card-solucao">
+                       <img src="./techture-site/components/images/internet (2).png" alt="imagem">
                        <h3>Software Integrado</h3>
                        <p>O nosso software é integrado com um site Potifólio, o que permite mais agilidade no atendimento ao cliente e um maior controle de seus projetos.</p>
                   </div>
   
-                  <div class="solucao-card">
-                      <img src="/techture-site/components/images/iteracao (2).png" alt="imagem">
+                  <div class="card-solucao">
+                      <img src="/techture-site/components/images/internet (1).png" alt="imagem">
                       <h3>Site Portifólio</h3>
                       <p>Disponibilizamos um site portifólio, no qual seus projetos podem ser visualizados, permitindo que seus clientes solicitem um orçamento e entre em contato atráves do site.</p>
                   </div>
   
-                  <div class="solucao-card">
-                       <img src="/" alt="imagem">
+                  <div class="card-solucao">
+                       <img src="./techture-site/components/images/gerenciamento-de-projetos.png" alt="imagem">
                        <h3>Controle de projetos</h3>
                        <p>Com nosso software você poderá controlar e analisar todos os seus projetos, além de poder compartilhar com seus clientes.</p>
                   </div>
@@ -80,10 +80,11 @@
        
             </section>
     
-            <section id='vantagem_section' data-anime="up">
+            <section id="vantagem_section" data-anime="up">
                 <div class="line"></div>
-                <div id="text-vantagem">
-                  <h2>Nossas Vantagens </h2>
+
+                <div id="txt-vantagem">
+                  <h2>Nossas Vantagens</h2>
                   <p>Somos uma solução inovadora e tecnológica para a sua empresa, conheça algumas das nossas vantagens.</p>
                 </div>
 
@@ -119,12 +120,10 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos inventore nam esse rerum odio officiis deserunt ad alias quibusdam in.</p>
                   </div>
              </div>
-                    
-    
-          
-    
+                  
        
         </section>
+
 
         <section class="contact" id='contato_section' data-anime="up">
           <div class="container">
@@ -215,8 +214,12 @@
         <script src="/techture-site/js/script.js"></script>
         <script src="/techture-site/js/vanilla tilt.js"></script>
         <script>
-          VanillaTilt.init(document.querySelectorAll(".solucao-card"));
-         
+            VanillaTilt.init(document.querySelectorAll(".card-solucao"), {
+                max: 25,
+                speed:400,
+                glare:true,
+                "max-glare": 1,
+    });         
         </script>
     </body>
     

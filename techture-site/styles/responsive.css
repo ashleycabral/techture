@@ -11,11 +11,10 @@
 
 
 /*(iphones, 600px) */
-@media (max-width: 600px) {
 
+@media screen and (max-width: 600px) {
 
     /*=======================cabeçalho=======================*/
-
 
     header .logo{
         width: 150px;
@@ -64,7 +63,7 @@
     #menu-web {
         display: block;
         position: absolute;
-        width: 80%;
+        width: 60%;
         top: 50px;
         right: 0px;
         background-color: var(--gray-color);
@@ -77,7 +76,7 @@
 
     #navegar.active #menu-web {
         
-        height: calc(100vh - 60px);
+        height: 100vh;
         visibility: visible;
         overflow-y: auto;
     }
@@ -102,14 +101,13 @@
     }
 
     /*=========================seção inicial========================*/
+    #inicio_section{
+        padding-top: 200px;
+    }
     
     #inicio_divCentral {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         align-items: flex-start;
         gap: 15px;
-        
     }
     
     #inicio_section  .title-inicio {
@@ -133,51 +131,44 @@
         gap: 10px;
     }
     .button{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .btn2-inicio{
-        font-size: 12px;
+        font-size: 10px;
     }
     /*=========================seção solucao======================*/
        
-        
+    
+    
     .line {
         width: 100px;
-        margin: 0 1rem 0 1.5rem;
-       
-        
+        margin: 0 1rem 0 1.5rem;   
     }
 
-    #text-solucao{
-        display: block;
-        
+    #text-solucao{ 
+       padding: 2rem; 
     } 
 
     #text-solucao h2{
-        
         text-align: left;
         font-size: 23px;
-        padding: 0 20px;
-       
+        
     }
     
     #text-solucao p{
-        margin: 20px;
-        padding: 10px 0.2rem;
         text-align: left;
         font-size: 18px;
     }
        
         
-      /* div dos container*/
-    .solucao-card  h3{
+/* div dos container*/
+    .card-solucao  h3{
         font-size: 20px;
        
     }
     
-    .solucao-card  p {
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .card-solucao p {
         font-size: 16px;
         
     }
@@ -187,77 +178,84 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        padding: 50px;
     }
 
 
 
-    .solucao-card {
+   .card-solucao {
         width: 300px;
-        height: 340px;
+        height: 350px;
         padding: 25px 5px;
-        
-        
     }
     
-    
-.img-fundo-solucao{
-    width: 100%;
-  }
+    .card-solucao img{
+        width: 70px;
+    }
 
-    /*===================== seção vantagem ===================*/
+
+    .img-fundo-solucao{
+        width: 100%;
+    }
+
+        /*===================== seção vantagem ===================*/
+        
+    .icon-vantagem{
+        width: 89px;
+    }
     
-.icon-vantagem{
-    width: 89px;
-  }
-  
-  #text-vantagem{
-  display: flex;
-  flex-direction: ;
-  align-items: flex-start;
-  
-  }
-  
-  #text-vantagem h2{
-    font-size: 23px;
-    font-weight: 700;
-    padding: 0 20px;
-}
-  
-  #text-vantagem p{
-    font-size: 18px;
-    margin: -10px;
-  }
-  
-  .vantagem1, .vantagem2, .vantagem3{
-    display: flex;
-    flex-direction: row;
+    #txt-vantagem {
     align-items: flex-start;
-    text-align: left;
-    padding:30px 15px;
-    margin-bottom: 3rem;
-  }
-  
-  
-  #vantagem_section h3{
-    font-size: 18px;
-  }
-  #vantagem_section  p{
-    font-size: 15px;
-   
-  }
+    
+    }
+    
+    #txt-vantagem h2{
+        font-size: 23px;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+    
+    #txt-vantagem p {
+        font-size: 20px;
+        padding:  20px;
+    }
+    
+    .vantagem1,  .vantagem3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding:30px;
+        margin-bottom: 1rem;
+    }
+    
+    .vantagem2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding:30px;
+        margin-bottom: 1rem;
+    }
+    .text-vantagem1 h3{
+        font-size: 18px;
+        padding: 10px 0px;
+    }
+    .text-vantagem1  p{
+        font-size: 18px;
+        padding: 10px 0px;
+       
+    
+    }
 
 
     /*===================== seção contato ===================*/
-
-   
     
       .contact-info {
         display: flex;
         flex-direction: column;
-       
-
       }
+
       .contact-info h2{
         font-size: 25px;
       }
@@ -298,15 +296,11 @@
         padding: 10px 20px;
         font-size: 20px;
     }
-
-     /*=======================NOSSA EMPRESA=======================*/
-    
 }
-    /* End Responsive */
 
 
-/*(android, 600px) */
-@media (max-width: 360px) {
+/*(android, 360px) */
+@media screen and (max-width: 360px) {
       
     #inicio_section  .title-inicio {
         font-size: 14px;
@@ -337,85 +331,5 @@
     }
 
 
-
-}
-
-
-@media (max-width: 884px) {
-
-      
-    header .logo{ 
-       margin-left: -2rem;
-    }
-
-    #menu-web {
-     gap: 26px;
-    }
-
-    
-    #inicio_divCentral{
-        margin-top: 5rem;
-    }
-    .text-inicio{
-     text-align: center;
-     font-size: 60px;
-    }
-
-    .text2-inicio{
-    font-size: 23px;
-    padding: 0 10px;
-    text-align: center;
-    }
-
-    #text-solucao h2{
-        padding: 0 100px;
-    }
-
-    
-    #text-solucao p{
-        padding: 20px 140px;
-    }
-
-   
-    #solucao_container {
-        flex-direction: ;
-        align-items: center;
-        margin-bottom: 35px;
-        padding: 0 10px;
-    }
-        
-    .solucao-card {
-        width: 400px;
-        height: 392px;
-        margin: 10px;
-        
-    }
-        
-    .solucao-card  h3{
-        font-size: 20px;
-    }
-    .solucao-card  p{
-        font-size: 18px;
-    }
-
-    #text-vantagem p{
-        font-size: 22px;
-        padding: 1rem 8rem;
-        text-align: center;
-    }
-
-    
-    .vantagem1{
-        padding: 1rem 3rem;
-        margin-bottom: 6rem;
-    }
-    .vantagem2{
-        padding: 1rem 3rem;
-        margin-bottom: 6rem;
-    }
-    .vantagem3{
-        padding: 1rem 3rem;
-        margin-bottom: 6rem;
-    }
 
 }

@@ -1,71 +1,12 @@
 
     /*=======================NOSSA EMPRESA=======================*/
 
-    @media (max-width: 884px) {
 
-        
-    header .logo {
-        margin-right: 80px;
-    }
-
-        
-    #menu-web {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        
-        
-    }
-    #inicio_section{
-        height: 40vh;
-        padding-top: 200px;
-        
-    }
-        
-    .txt-inicio{
-        padding: 0 1rem;
-    }
-
-
-    .text-sobre h2{
-        font-size: 35px;
-        padding: 10px 2rem 10px 0;
-        text-align: center;
-    }
-
-
-        .text-sobre p{
-        font-size: 18px;
-        padding: 15px 1rem 15px 0rem;
-        text-align: center;
-        line-height: 36px;
-        }
-
-        
-    .img-escritorio{
-        display: none;
-    }
-
-    #text-solucao {
-        font-size: 26px;
-        padding: 0 5rem;
-    }
-
-    .solucao-card {
-        width: 320px;
-        height: 300px;
-        padding: 25px 10px;
-        margin: 25px;
-    }
-}
-
-
-
-@media (max-width: 600px) {
-
+@media screen and (max-width: 600px) {
+  
      header .logo{
         width: 150px;
-        margin-left: -40px;
+      
      }
 
 
@@ -75,6 +16,7 @@
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
         width: 10px;
+        margin-right: 40px;
     }
 
 
@@ -111,10 +53,10 @@
     #menu-web {
         display: block;
         position: absolute;
-        width: 80%;
-        top: 50px;
+        width: 60%;
+        top: 63px;
         right: 0px;
-        background-color: var(--gray-color);
+        background-color: rgba(0, 0, 0, 0.884);
         z-index: 1000;
         height: 0px;
         transition: .6s;
@@ -150,23 +92,24 @@
 
    /*section inicio */
         
-    #inicio_section{
+    #inicio_section-2{
         height: 60vh;
         padding-top: 160px;
     }
 
 
-    .title-inicio{
+    .title-inicio-2{
         font-size: 35px;
+        text-align: center;
         
     }
-    .txt-inicio{
+    .txt-inicio-2{
         font-size: 18px;
         padding: 0rem;
     }
 
   /*section sobre*/
-    #container-sobre{
+    #container-sobre-2{
         margin: 1px;
         padding: 20px;
         text-align: center;
@@ -177,11 +120,11 @@
        display: none;
     }
         
-    .text-sobre h2{
+    .text-sobre-2 h2{
         font-size: 25px;
         padding: 0 1rem;
     }
-    .text-sobre p{
+    .text-sobre-2 p{
         font-size: 18px;
         padding: 20px 25px;
         text-align: justify;
@@ -190,28 +133,69 @@
     
   /*section cards*/
         
-    #text-solucao {
+    #text-solucao-2 {
         font-size: 20px;
         padding: 0 2rem;
     }
 
         
-    #solucao_container {
+    #solucao_container-2 {
         display: flex;
         flex-direction: column;
         margin: 0 10px;
         padding: 0 50rem;
         margin-bottom: 45px;
     }
+    .solucao-card-2{
+        width: 300px;
+    }
 
         
-    .text-entrar-ctt h2{
+    .text-entrar-ctt-2 h2{
         font-size: 25px;
     }
 
 
-    .text-entrar-ctt p{
+    .text-entrar-ctt-2 p{
         font-size: 17px;
         padding-top: 20px;
     }
+}
+
+
+
+
+/*(android, 600px) */
+@media (max-width: 360px) {
+      
+    #inicio_section-2  .title-inicio-2 {
+        font-size: 14px;
+        text-align: left;
+        padding: 0 2px;
+    }
+
+    #inicio_section-2  .text-inicio-2{
+        font-size: 36px;
+        text-align: left;
+    }
+
+    #inicio_section-2  .text2-inicio-2{
+        font-size: 16px;
+        text-align: left;
+        padding: 0 2px;
+    }
+
+    .button-inicio{
+        gap: 14px;
+    }
+    .button{
+        font-size: 10px;
+    }
+
+    .btn2-inicio{
+        font-size: 10px
+    }
+
+
+
 }
