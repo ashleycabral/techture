@@ -166,6 +166,88 @@
 /*(android, 360px) */
 @media screen and (max-width: 360px) {
 
+    
+
+    #botao-mobile {
+        display: flex;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        width: 40px;
+        
+    }
+
+
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid var(--light-color);
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        background: var(--light-color);
+        display: block;
+        width: 20px;
+        height: 2px;
+        content: '';
+        margin-top: 7px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #navegar.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #navegar.active #hamburguer::after{
+        transform: rotate(135deg);
+        top: -9px;
+    }
+
+    #navegar.active #hamburguer::before{
+        transform: rotate(-135deg);
+    }
+
+    #menu-web {
+        display: block;
+        position: absolute;
+        width: 60%;
+        top: 63px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.884);
+        z-index: 1000;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #navegar.active #menu-web {
+        
+        height: calc(100vh - 60px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+   
+    #menu-web li:hover{
+        background-color: var(--dark-color);
+        filter: brightness(1.5);
+        
+    }
+
+    #menu-web li a{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    #menu-web .btn-contact{
+        border: none;
+        padding: 30px;
+    }
+
 
     header .logo{
         margin-right: 80px;
