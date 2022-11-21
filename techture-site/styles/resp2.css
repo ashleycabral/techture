@@ -1,7 +1,7 @@
 
  
 @media screen and (max-width: 600px) {
-  
+ 
      header .logo{
         width: 150px;
       
@@ -165,6 +165,8 @@
 
 /*(android, 360px) */
 @media screen and (max-width: 360px) {
+
+
     header .logo{
         margin-right: 80px;
     }

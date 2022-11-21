@@ -308,7 +308,7 @@ header .logo {
 }
 
 .icon-vantagem{
-  width: 190px;
+  width: 170px;
 }
 
 #txt-vantagem{
@@ -336,23 +336,23 @@ padding: 20px 0;
 .vantagem1{
   display: flex;
   align-items: flex-end;
-  padding:30px 100px;
-  margin-bottom: 10rem;
+  padding:30px 200px;
+  margin-bottom: 8rem;
 }
 
 .vantagem2{
   display: flex;
   align-items: flex-start;
   text-align: right;
-  padding: 20px 100px;
-  margin-bottom: 10rem;
+  padding: 20px 200px;
+  margin-bottom: 8rem;
 }
 
 .vantagem3{
   display: flex;
   align-items: flex-end;
-  padding: 20px 100px;
-  margin-bottom: 10rem;
+  padding: 20px 200px;
+  margin-bottom: 8rem;
 }
 
 .text-vantagem1 h3{
