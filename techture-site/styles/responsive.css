@@ -26,7 +26,6 @@
     header .logo{
         width: 150px;
         margin-left: -2rem;
-        
     }
 
     #botao-mobile {
@@ -34,7 +33,7 @@
         border: none;
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
-        width: 60px;
+        width: 10px;
     }
 
     #hamburguer{

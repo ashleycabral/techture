@@ -23,7 +23,7 @@
    
      header .logo{
         width: 150px;
-      
+        margin-left: -2rem;
      }
 
 
@@ -165,14 +165,14 @@
         padding:0;
         margin-bottom: 45px;
     }
-    
+
     .solucao-card-2{
         width: 300px;
     }
 
         
     .text-entrar-ctt-2 h2{
-        font-size: 25px;
+        font-size: 22px;
     }
 
 
