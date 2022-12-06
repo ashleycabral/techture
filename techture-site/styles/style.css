@@ -22,7 +22,6 @@
     box-sizing: border-box;
     padding:0;
     margin: 0;
-    border: none;
     scroll-behavior: smooth;
 }
 
@@ -86,7 +85,6 @@ header {
 
 header.ativo{
     background-color: var(--gray-color);
-    border-bottom: none;
     top: 0;
     transition: .5s;
 }
