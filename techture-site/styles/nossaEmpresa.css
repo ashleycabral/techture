@@ -267,20 +267,22 @@ header .logo {
 }
 
 .text-entrar-ctt-2{
-    padding: 2.5rem;
+    padding: 50px;
     text-align: center;
 }
 
 .text-entrar-ctt-2 h2{
     color: var(--light-color);
-    font-size: 30px;
+    font-size: 35px;
+    padding-bottom: 20px;
 }
-
-
 .text-entrar-ctt-2 p{
     color: var(--light-color);
-    font-size: 20px;
+    font-size: 20px; 
+    padding: 0 200px;
+   
 }
+
 
 
 
